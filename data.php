@@ -5,4 +5,5 @@ $dotenv->load();
 
 // نستطيع الان قراءة المتغيرات من الملف
 $db_user = getenv('DB_USER');
-echo $db_user;
+
+?>

@@ -4,35 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Login</title>
 </head>
 
 <body>
-    <form>
-    <div style="border: 1px solid #DDD;width:450px; 
-    margin-top: 10%;
-    margin-bottom: 50%;
-    margin-right:60%;
-    margin-left: 32%;
-    height: 500;
-    border-radius: 10px;">
-    <img  style="width:130; margin-left: 35%;margin-top: 5px;"src="/Users/Maha48/Downloads/Prince_Sattam_Bin_Abdulaziz_University.png">
-    <img style="width:400px;margin-left: 15%;" src="/Users/Maha48/Downloads/مشروع جديد-3 2.png">
-    <hr style="width:400px">
-    <div style=" width: 300;margin-left: 20%; padding: 10px">
-    <table>
-    <tr><td style="color:#272626">Username</td><td><input type="text" name="usernameadmin"></td></tr><br>
-    <tr><td style="color:#272626">Password</td><td><input type="password" name="passwordadmin"></td> </tr><br>
-    </table> <br>
-    <input style= " background-color: rgba(62, 62, 243, 0.705); 
-    border: 1px solid #DDD;
-    padding: 11px 30px;
-    text-align: center;
-    border-radius: 10px;
-    margin-left: 25%;
-    font-size: 16px;" type="submit" value="Login">
-    </div>
-    </div>
+    <form action="data.php" method="POST">
+        <div id="basicdiv">
+            <img id="psauimage" src="images/Prince_Sattam_Bin_Abdulaziz_University.png">
+            <img id="fepimage" src="images/FEP.png">
+            <hr style="width:400px">
+            <div id="inputdiv">
+                <table>
+                    <tr>
+                        <td class="usernameinput">Username</td>
+                        <td><input type="text" name="usernameadmin"></td>
+                    </tr><br>
+                    <tr>
+                        <td class="usernameinput">Password</td>
+                        <td><input type="password" name="passwordadmin"></td>
+                    </tr><br>
+                </table> <br>
+                <input id="loginsubmit" type="submit" value="Login">
+            </div>
+        </div>
     </form>
 </body>
 
